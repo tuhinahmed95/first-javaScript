@@ -71,9 +71,55 @@
 // document.write("area =" + area + "<br/>");
 
 
-var x = ["farzana","arfan","rafia"];
-console.log(x);
-x.push("tangila","sharmin");
-console.log(x);
-x.pop();
-console.log(x)
+// var x = ["farzana","arfan","rafia"];
+
+// console.log(x);
+// x.push("tangila","sharmin");
+// console.log(x);
+
+// x.pop();
+// console.log(x)
+// x.shift();
+// console.log(x);
+
+
+// var marks = prompt("enter your marks :");
+// if (marks  >=80)
+// console.log("A+");
+// else if (marks >=70)
+// console.log("A");
+// else if (marks >=60)
+// console.log("A-");
+// else if (marks >=50)
+// console.log("B");
+// else if (marks >=40)
+// console.log("C");
+// else if (marks >=33)
+// console.log("D");
+// else 
+// console.log("F");
+
+var letter = prompt("enter your letter :");
+letter = letter.toLowerCase();
+if (letter == "a" || letter == "e" || letter == "i" || letter == "o" || letter == "u")
+console.log("vowel");
+else
+console.log("consonant"); 
+
+// var marks = prompt("enter your marks");
+// if (marks >=80)
+// console.log("A+");
+// else if (marks >=70)
+// console.log("A");
+// else if (marks >=60)
+// console.log("A-");
+// else if (marks >=50)
+// console.log("B")
+// else if (marks >=40)
+// console.log("D");
+// else if (marks >=33)
+// console.log("D");
+// else 
+// console.log("failed");
+
+
