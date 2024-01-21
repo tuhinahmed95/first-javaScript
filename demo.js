@@ -99,12 +99,12 @@
 // else 
 // console.log("F");
 
-var letter = prompt("enter your letter :");
-letter = letter.toLowerCase();
-if (letter == "a" || letter == "e" || letter == "i" || letter == "o" || letter == "u")
-console.log("vowel");
-else
-console.log("consonant"); 
+// var letter = prompt("enter your letter :");
+// letter = letter.toLowerCase();
+// if (letter == "a" || letter == "e" || letter == "i" || letter == "o" || letter == "u")
+// console.log("vowel");
+// else
+// console.log("consonant"); 
 
 // var marks = prompt("enter your marks");
 // if (marks >=80)
@@ -121,5 +121,38 @@ console.log("consonant");
 // console.log("D");
 // else 
 // console.log("failed");
+
+
+function addition(a,b) { 
+    document.write("addition =" + (a + b));
+}
+addition(10,20);
+document.write("<br/>");
+
+function subtration(x,y) { 
+    document.write("subtraction =" + (x-y));
+}
+subtration(20,10);
+document.write("<br/>");
+
+function divide(e,f) { 
+    document.write("divide =" + e/f);
+}
+divide(40,5);
+document.write("<br/>");
+
+function multipliction(rafia,farzana) { 
+    document.write("multiplication :" + rafia*farzana);
+}
+multipliction(7,8)
+document.write("<br/>");
+
+function modulas(c,d) { 
+    document.write("modulas =" + c%d);
+}
+modulas(100,25)
+document.write("<br/>")
+
+
 
 
