@@ -428,20 +428,43 @@
 
 // }
 
-var x =1;
-var sum = 0;
-while(x<=50){ 
-    if (x % 3 ==0 && x % 5 ==0){ 
-        document.write(" " + x);
-        sum = sum + x;
-    }
+// var x =1;
+// var sum = 0;
+// while(x<=50){ 
+//     if (x % 3 ==0 && x % 5 ==0){ 
+//         document.write(" " + x);
+//         sum = sum + x;
+//     }
     
-    x = x + 1;
-}
-document.write("sum =" + sum);
-const arr = ["a" , "b" , "c" , "d" , "e" , "f"];
-console.log(arr)
-for (let x =0; x <arr.length; x = x +1){
-    document.write(arr);
+//     x = x + 1;
+// }
+// document.write("sum =" + sum);
+// const arr = ["a" , "b" , "c" , "d" , "e" , "f"];
+// console.log(arr)
+// for (let x =0; x <arr.length; x = x +1){
+//     document.write(arr);
     
+// }
+
+for (var x =10; x>=1; x = x -1){ 
+    document.write(" " +x + "<br/>");
 }
+
+for(var x =15; x>=1; x = x -1){ 
+    document.write(" " + x);
+}
+
+// hights number ber korar niyom
+var a = parseInt(prompt("enter your first number :"));
+var b = parseInt(prompt("enter your second number :"));
+var c = parseInt(prompt("enter your third number :"));
+var hight;
+if (a>b) { 
+    hight = a;
+}else if (b>a) { 
+    hight = b;
+}    
+else if (c>b){ 
+    hight = c;
+}
+document.write("hight =" + hight);
