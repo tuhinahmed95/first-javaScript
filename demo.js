@@ -480,3 +480,22 @@ display(5,6);
 display(7,4);
 display(6,7);
 
+
+
+// Array er mddhe for loop er babohar
+
+
+var num = new Array();
+for(var x =1; x <=5; x = x+1){ 
+    num[x] = parseInt(prompt("enter a number :"));
+}
+
+var sum = 0;
+for (var x = 1; x <=5; x ++){ 
+    console.log(num[x]);
+    sum = sum + num[x];
+
+}
+
+console.log("Result =" + sum);
+
