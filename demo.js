@@ -446,25 +446,37 @@
     
 // }
 
-for (var x =10; x>=1; x = x -1){ 
-    document.write(" " +x + "<br/>");
-}
+// for (var x =10; x>=1; x = x -1){ 
+//     document.write(" " +x + "<br/>");
+// }
 
-for(var x =15; x>=1; x = x -1){ 
-    document.write(" " + x);
-}
+// for(var x =15; x>=1; x = x -1){ 
+//     document.write(" " + x);
+// }
 
-// hights number ber korar niyom
-var a = parseInt(prompt("enter your first number :"));
-var b = parseInt(prompt("enter your second number :"));
-var c = parseInt(prompt("enter your third number :"));
-var hight;
-if (a>b) { 
-    hight = a;
-}else if (b>a) { 
-    hight = b;
-}    
-else if (c>b){ 
-    hight = c;
+// // hights number ber korar niyom
+// var a = parseInt(prompt("enter your first number :"));
+// var b = parseInt(prompt("enter your second number :"));
+// var c = parseInt(prompt("enter your third number :"));
+// var hight;
+// if (a>b) { 
+//     hight = a;
+// }else if (b>c) { 
+//     hight = b;
+// }    
+// else if (c){ 
+//     hight = c;
+// }
+// document.write("highest =" + hight);
+
+
+// creating a function
+
+function display(a,b){ 
+    var result = a*b;
+    console.log(result);
 }
-document.write("hight =" + hight);
+display(5,6);
+display(7,4);
+display(6,7);
+
