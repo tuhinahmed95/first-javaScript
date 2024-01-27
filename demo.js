@@ -472,30 +472,58 @@
 
 // creating a function
 
-function display(a,b){ 
-    var result = a*b;
-    console.log(result);
+// function display(a,b){ 
+//     var result = a*b;
+//     console.log(result);
+// }
+// display(5,6);
+// display(7,4);
+// display(6,7);
+
+
+
+// // Array er mddhe for loop er babohar
+
+
+// var num = new Array();
+// for(var x =1; x <=5; x = x+1){ 
+//     num[x] = parseInt(prompt("enter a number :"));
+// }
+
+// var sum = 0;
+// for (var x = 1; x <=5; x ++){ 
+//     console.log(num[x]);
+//     sum = sum + num[x];
+
+// }
+
+// console.log("Result =" + sum);
+
+
+// // number sort using for Array
+
+// var number = [20, 25, 5, 8, 2, 10, 20];
+// number.sort(function(a,b){ 
+//     return a-b;
+// })
+// console.log(number);
+
+
+
+function highestScore(score){ 
+    
+    let max = 0;
+    for (let x =0; x <score.length; x++){ 
+        if(max <score[x]){ 
+            max = score[x];
+        }
+       
+    }
+    return max;
 }
-display(5,6);
-display(7,4);
-display(6,7);
+var number = [10,20,80,5,28,90];
+var maxScore = highestScore(number);
+console.log(maxScore);
 
 
-
-// Array er mddhe for loop er babohar
-
-
-var num = new Array();
-for(var x =1; x <=5; x = x+1){ 
-    num[x] = parseInt(prompt("enter a number :"));
-}
-
-var sum = 0;
-for (var x = 1; x <=5; x ++){ 
-    console.log(num[x]);
-    sum = sum + num[x];
-
-}
-
-console.log("Result =" + sum);
 
