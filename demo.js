@@ -439,6 +439,7 @@
 //     x = x + 1;
 // }
 // document.write("sum =" + sum);
+
 // const arr = ["a" , "b" , "c" , "d" , "e" , "f"];
 // console.log(arr)
 // for (let x =0; x <arr.length; x = x +1){
@@ -510,20 +511,202 @@
 
 
 
-function highestScore(score){ 
+// function highestScore(score){ 
     
-    let max = 0;
-    for (let x =0; x <score.length; x++){ 
-        if(max <score[x]){ 
-            max = score[x];
-        }
+//     let max = 0;
+//     for (let x =0; x <score.length; x++){ 
+//         if(max <score[x]){ 
+//             max = score[x];
+//         }
        
-    }
-    return max;
-}
-var number = [10,20,80,5,28,90];
-var maxScore = highestScore(number);
-console.log(maxScore);
+//     }
+//     return max;
+// }
+// var number = [10,20,80,5,28,90];
+// var maxScore = highestScore(number);
+// console.log(maxScore);
 
 
 
+
+// var number =  Number(prompt("enter a number :"));
+//     if(number >=0){ 
+//         console.log("positve");
+    
+//     }
+//     else if(number<=0){ 
+//         console.log("negetive");
+//     }
+//     else
+//         console.log("zero");
+
+
+//    var result = number >0?  "positve" : number <0? "negetive" : "zero";
+//    console.log(result);
+
+
+// let myNum = "this is part of javaScript";
+// for(names in myNum){ 
+//     document.write(" " + names + "<br/>");
+//     console.log(" " + names + "<br/>");
+// }
+
+
+
+
+//  let rafia = "hellw word how are you";
+//  for(let names in rafia){ 
+//     console.log(rafia [names]);
+//  }
+
+
+
+
+//  var x =1;
+// var sum = 0;
+// while(x<=50){ 
+//     if (x % 3 ==0 && x % 5 ==0){ 
+//         document.write(" " + x);
+//         sum = sum + x;
+//     }
+    
+//     x = x + 1;
+// }
+// document.write("sum =" + sum);
+
+
+
+// let x =1;
+// let sum =0;
+// while(x<=50){ 
+//     if (x % 3 ==0 && x % 5 == 0){ 
+//         document.write(" " + x);
+//         sum = sum + x;
+//     }
+//     x = x +1;
+// }
+// document.write("Result =" + sum);
+
+// let a = 1;
+
+// do{ 
+//     a ++
+// }while(a<=5)
+
+
+
+
+// function prime(number){ 
+//     for(let x =2; x <number; x++){ 
+//         if (number % 2 ===0){ 
+//             return false;
+//         }
+//         else
+//         return true;
+//     }
+// }
+
+// let primeNumber =prime (5);
+// document.write(primeNumber);
+
+// let base = parseInt(prompt("ente your first number :"));
+// let height = parseInt(prompt("enter your second number :"))
+// let area = base * height;
+// document.write("area =" + area);
+
+// let base = parseInt(prompt("enter your first number :"));
+// let height = parseInt(prompt("enter your second number :"));
+// let area = (base *height) / 2;
+
+// document.write(area);
+
+
+// farhanheit / celcius ber krar upay
+
+
+// let farn = parseInt(prompt("enter farnheit :"));
+// let cels = (farn-32) * (5/9);
+// document.write(cels);
+
+
+// let cels = parseInt(prompt("enter celcius number :"))
+// let farn = (cels*(9/5)) +32;
+// document.write(farn);
+
+
+
+// function prime(number){ 
+//     for(let x =2; x <number; x++){ 
+//         if (number % 2 ===0){ 
+//             return false;
+//         }
+//         else
+//         return true;
+//     }
+// }
+
+// let primeNumber =prime ();
+// document.write(primeNumber);
+
+
+// let num1 = parseInt(prompt("enter your number :"));
+// let count = 0;
+
+// if (num1==0 || num1==1){ 
+//         document.write("Not a Prime Number");
+// }
+//     else{ 
+//         for(let x =2; x<num1; x++){ 
+//             if (num1 % x ==0){ 
+//                 count ++;
+//                 break;
+//             }
+//         }
+//         if(count ==0){ 
+//             document.write("prime");
+//         }
+//         else{ 
+//             document.write("not a prime");
+//         }
+
+//     }
+
+    // let num2 = parseInt(prompt("enter your number :"));
+    // let display = 0;
+    
+
+    // if (num2 ==0 || num2 ==1){ 
+    //     document.write("not a prime number")
+    // }
+    // else{ 
+    //     for(let a = 2; a<num2; a++){ 
+    //         if (num2 % 2 ==0){ 
+    //             display ++;
+    //             break;
+    //         }
+    //     }
+    //     if(display ==0){ 
+    //         document.write("prime");
+    //     }
+    //     else{ 
+    //         document.write("not a prime number");
+    //     }
+
+    // }
+
+
+    // number sequnce ber korar niyom
+
+
+   let number = parseInt(prompt("enter your number :"));
+   let first = 0, second = 1, nextTerm;
+   document.write("the number series :");
+
+   for(let x =1; x<number; x++){ 
+    document.write(" " + first);
+    nextTerm = first + second;
+    first = second;
+    second = nextTerm;
+   }
+
+   
