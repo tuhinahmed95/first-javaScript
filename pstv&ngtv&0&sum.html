@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positivr/negetive&sum</title>
+</head>
+<body>
+    <script>
+        
+let number = [4, 4, -4, -1, 0, 45, 9, 79];
+
+let positive = 0;
+let negetive = 0;
+let zero = 0;
+
+sum = 0;
+
+
+
+for(x =0; x<number.length; x++){ 
+    if(number[x]>0){ 
+        positive ++;
+    }
+    else if(number[x]<0){ 
+        negetive ++;
+    }
+    else { 
+        zero ;
+    }
+    sum = sum + number[x];
+}
+
+document.write("positive number :" + positive + "<br/>");
+document.write("negetive number :" + negetive + "<br/>");
+document.write("zero =" + zero +"<br/>"); 
+document.write("sum " + sum);
+
+    </script>
+</body>
+</html>
