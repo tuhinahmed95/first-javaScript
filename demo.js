@@ -332,27 +332,27 @@
 
 
 
-// var score = parseInt(prompt("enter your number :"));
-// if (score >=80 && score >=100){ 
-//     document.write("A+");
-// }
-// else if (score >=70 && score >=79){ 
-//     document.write("A");
-// }
-// else if (score >=60 && score <=69){ 
-//     document.write("A-");
-// }
-// else if (score >=50 && score <=59){ 
-//     document.write("B");
-// }
-// else if(score >=40 && score <=49){ 
-//     document.write("C");
-// }
-// else if (score >=33 && score <=39){ 
-//     document.write("D");
-// }
-// else
-// document.write("Failed");
+var score = parseInt(prompt("enter your number :"));
+if (score >=80 && score >=100){ 
+    document.write("A+");
+}
+else if (score >=70 && score >=79){ 
+    document.write("A");
+}
+else if (score >=60 && score <=69){ 
+    document.write("A-");
+}
+else if (score >=50 && score <=59){ 
+    document.write("B");
+}
+else if(score >=40 && score <=49){ 
+    document.write("C");
+}
+else if (score >=33 && score <=39){ 
+    document.write("D");
+}
+else
+document.write("Failed");
 
 
 // var number = prompt("enter your numbr :");
@@ -455,20 +455,20 @@
 //     document.write(" " + x);
 // }
 
-// // hights number ber korar niyom
-// var a = parseInt(prompt("enter your first number :"));
-// var b = parseInt(prompt("enter your second number :"));
-// var c = parseInt(prompt("enter your third number :"));
-// var hight;
-// if (a>b) { 
-//     hight = a;
-// }else if (b>c) { 
-//     hight = b;
-// }    
-// else if (c){ 
-//     hight = c;
-// }
-// document.write("highest =" + hight);
+// hights number ber korar niyom
+var a = parseInt(prompt("enter your first number :"));
+var b = parseInt(prompt("enter your second number :"));
+var c = parseInt(prompt("enter your third number :"));
+var hight;
+if (a>b) { 
+    hight = a;
+}else if (b>c) { 
+    hight = b;
+}    
+else if (c){ 
+    hight = c;
+}
+document.write("highest =" + hight);
 
 
 // creating a function
@@ -698,15 +698,187 @@
     // number sequnce ber korar niyom
 
 
-   let number = parseInt(prompt("enter your number :"));
-   let first = 0, second = 1, nextTerm;
-   document.write("the number series :");
+//   
 
-   for(let x =1; x<number; x++){ 
-    document.write(" " + first);
-    nextTerm = first + second;
-    first = second;
-    second = nextTerm;
+
+
+
+//    let digit = parseInt(prompt("enter your number :"));
+
+//    let num1 = 0, num2 = 1, nextTeram;
+
+//    document.write("this is a number ");
+
+//    for(x = 1; x<digit; x++){ 
+
+//     document.write(" " + num1);
+
+//     nextTeram = num1 + num2;
+
+//     num1 = num2;
+
+//     num2 = nextTeram;
+//    }
+
+
+
+   var  a = [20, 15, 12, 88, 56, 17];
+   let large = a[0];
+
+   let small = a[0];
+
+   sum = 0;
+
+   for(x = 1; x <a.length; x++){ 
+    if (large< a[x]){ 
+        large = a[x];
+    }
+
+    if(small> a[x]){ 
+        small= a[x];
+    }
+
+    sum = sum + a[x];
+
+
    }
 
-   
+   document.write("large number :" + large + "<br/>");
+   document.write("small number :" + small + "<br/>")
+   document.write("sum =" + sum );
+
+
+// let number = [10,20,40,50,60]
+
+// let large = number[0];
+
+// let small = number[0];
+
+// let sum = 0;
+
+// for( x =1; x<number.length; x++){ 
+//     if(large<number[x]){ 
+//         large = number[x];
+//     }
+//     if(small>number[x]){ 
+//         small = number[x];
+//     }
+// // }
+
+// document.write("large =" + large + "<br/>");
+// document.write("small =" + small);
+// document.write("sum =" + sum);
+
+
+
+
+// let number = [-20, 8, 10, 0, -9, -12,12,45,-4];
+
+// let positive = 0;
+
+// let negetive = 0;
+
+// let zero = 0;
+
+// for(x = 0; x<number.length; x++){ 
+//     if(number[x]>0){ 
+//         positive ++;
+//     }
+
+//     else if(number[x]<0){ 
+//         negetive ++;
+//     }
+    
+//     else{ 
+//         zero ;
+//     }
+// }
+
+// document.write("positive number =" + positive + "<br/>");
+// document.write("negetive number =" + negetive + "<br/>");
+// document.write("zero = " + zero + "<br/>");
+
+
+
+
+// let number = [100,25,45,-8,-9,-45,0,4,-5,0,0,4];
+
+// let positive = 0;
+
+// let negetive = 0;
+
+// let zero = 0;
+
+// for(a = 0; a<number.length; a++){ 
+//     if(number[a]>0){ 
+//         positive ++;
+//     }
+     
+//     else if(number[a]<0){ 
+//         negetive ++;
+//     }
+//     else { 
+//         zero;
+//     }
+// }
+
+// document.write("positive number =" + positive + "<br/>");
+// document.write("Negetive number =" + negetive + "<br/>");
+// document.write("Zero =" + zero + "<br/>");
+
+
+
+// let number = parseFloat(prompt("enter your number :"));
+
+// let count = 0;
+
+// if(number == 0 || number == 1){ 
+//     document.write(number);
+// }
+
+// else if()
+
+
+
+
+// let number = [10,20,40,50,60]
+
+// let large = number[0];
+
+// let small = number[0];
+
+// let sum = 0;
+
+// for( x =1; x<number.length; x++){ 
+//     if(large<number[x]){ 
+//         large = number[x];
+//     }
+//     if(small>number[x]){ 
+//         small = number[x];
+//     }
+// }
+
+// document.write("large =" + large + "<br/>");
+// document.write("small =" + small);
+// document.write("sum =" + sum);
+
+
+
+
+
+   let digit = parseInt(prompt("enter your number :"));
+
+   let num1 = 0, num2 = 1, nextTeram;
+
+   document.write("this is a number ");
+
+   for(x = 1; x<digit; x++){ 
+
+    document.write(" " + num1);
+
+    nextTeram = num1 + num2;
+
+    num1 = num2;
+
+    num2 = nextTeram;
+   }
