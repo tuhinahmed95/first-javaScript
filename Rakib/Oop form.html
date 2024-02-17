@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oop form</title>
+
+
+</head>
+<body>
+
+    <form id="form1"> 
+        <fieldset>
+            <legend><h1>user information</h1></legend>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="enter your name"> <br> <br>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="enter your adress"> <br> <br>
+
+            <label for="radio">Gender</label>
+            <input type="radio" id="radio" name="radio" value="male"> male
+            <input type="radio" id="radio" name="radio" value="female">Female
+            <input type="radio" id="radio" name="radio" value="other">other <br><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"><br>
+
+            <button>submit</button>
+
+
+        </fieldset>
+    </form>
+
+    <script>
+
+        class formValues{ 
+            constructor(formData){ 
+                for(let[name,value] of formData){ 
+                    this[name]=formData.getAll(name).join(' ,');
+                }
+
+            }
+
+            getData(){ 
+                let result = "Name :" + this.name + "<br/>";
+                    result += "Address :" + this.address + "<br/>";
+                    result += "Gender :" + this.radio + "<br/>";
+                    result += "Email :" + this.email + "<br/>";
+                let win = window.open("", "", "width = 400, height =400");
+                win.document.write(result);    
+            }
+
+
+        }
+
+            form1.onsubmit = async(e)=>{ 
+                e.preventDefault();
+                let form2 = document.querySelector("#form1");
+                let form3 = new FormData(form2);
+                let f = new formValues(form3);
+                f.getData();
+            }
+    </script>
+
+</body>
+</html>
