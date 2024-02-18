@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: teal;
+        }
+
+        form {
+            width: 400px;
+            height: 600px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: rgb(178, 189, 189);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .error {
+            color: red;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<form id="registrationForm">
+  <h2 class="title">Create a new account</h2>
+  <hr>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" placeholder="Enter your area" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+
+    <label for="course">Course:</label>
+    <select id="course" name="course" required>
+        <option value="math">WDPF</option>
+        <option value="science">C#</option>
+        <option value="history">JAVA</option>
+        <option value="history">DATABASE</option>
+        <option value="history">GRAPIC-DEISGN</option>
+    </select>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+    <label for="passwordConfirmation">Confirm Password:</label>
+    <input type="password" id="passwordConfirmation" name="passwordConfirmation" placeholder="Enter your password" required>
+
+    <button type="button" onclick="openDynamicWindow()" style="margin-left: 287px;">Create Account</button>
+
+    <div id="errorMessages" class="error"></div>
+</form>
+
+<script>
+class User {
+    constructor(name, address, gender, course, email, password, passwordConfirmation) {
+        this.name = name;
+        this.address = address;
+        this.gender = gender;
+        this.course = course;
+        this.email = email;
+        this.password = password;
+        this.passwordConfirmation = passwordConfirmation;
+        this.errors = [];
+    }
+
+    validateEmail() {
+        if (!this.email.includes('@') || !this.email.includes('.')) {
+            this.errors.push("Invalid email address");
+        }
+    }
+
+    validatePassword() {
+        if (this.password.length < 8) {
+            this.errors.push("Password must be at least 8 characters long");
+        }
+
+        if (this.password !== this.passwordConfirmation) {
+            this.errors.push("Password and confirmation do not match");
+        }
+    }
+
+    registerUser() {
+        this.errors = [];
+        this.validateEmail();
+        this.validatePassword();
+
+        if (this.errors.length === 0) {
+            alert("User registration successful");
+            // Perform registration logic (e.g., send data to server)
+        } else {
+            const errorMessages = document.getElementById("errorMessages");
+            errorMessages.innerHTML = this.errors.join("<br>");
+        }
+    }
+}
+
+function openDynamicWindow() {
+    const name = document.getElementById("name").value;
+    const address = document.getElementById("address").value;
+    const gender = document.getElementById("gender").value;
+    const course = document.getElementById("course").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    const passwordConfirmation = document.getElementById("passwordConfirmation").value;
+
+    const user = new User(name, address, gender, course, email, password, passwordConfirmation);
+    user.registerUser();
+
+    // Open dynamic window (you can customize the window features as needed)
+    const dynamicWindow = window.open('', '_blank', 'width=400,height=400');
+    dynamicWindow.document.write(`<h2>Registration Details</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Address:</strong> ${address}</p>
+        <p><strong>Gender:</strong> ${gender}</p>
+        <p><strong>Course:</strong> ${course}</p>
+        <p><strong>Email:</strong> ${email}</p>`);
+}
+</script>
+
+</body>
+</html>
