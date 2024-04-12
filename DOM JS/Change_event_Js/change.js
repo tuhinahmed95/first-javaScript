@@ -24,5 +24,10 @@
 
 
 
-const department = document.querySelector("department");
-console.log(department);
+const department = document.querySelector("#department");
+// console.log(department);
+
+department.addEventListener("change",departmentHandaler);
+function departmentHandaler(e){ 
+    console.log("selected");
+}
