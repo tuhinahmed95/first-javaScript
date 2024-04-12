@@ -24,5 +24,5 @@
 
 
 
-const dropdown = document.querySelector("department");
+const department = document.querySelector("department");
 console.log(department);
