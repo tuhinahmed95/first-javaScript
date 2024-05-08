@@ -1,0 +1,20 @@
+.div{ 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+button{ 
+    background-color:green;
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 1px 1px red;
+    
+}
+button:hover{ 
+    background-color: blanchedalmond;
+}
