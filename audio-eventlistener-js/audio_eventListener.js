@@ -1,8 +1,8 @@
 
 
-for(i=0; i<3; i++){ 
+for(var i=0; i<3; i++){ 
     document.querySelectorAll(".myButton")[i].addEventListener("click",function(){ 
-        let text = this.innerHTML;
+        var text = this.innerHTML;
         console.log(text);
 
 
