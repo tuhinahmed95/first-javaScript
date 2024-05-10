@@ -16,3 +16,21 @@
 // }
 
 // deleteSomething();
+
+function welcomeMessege(){ 
+    let h1 = document.createElement("h1");
+    let text ;
+
+    let name = prompt("Enter Your Name");
+    if(name == null || name ==""){ 
+        text = "No Name Found";
+    }
+    else{ 
+        text ="Welcome "+ name;
+    }
+    let textNode = document.createTextNode(text);
+    h1.appendChild(textNode);
+    document.body.appendChild(h1);
+}
+
+welcomeMessege();
