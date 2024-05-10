@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error throw handle</title>
+
+    
+
+</head>
+<body>
+
+    <p>Enter a number between 5 to 10 :</p>
+    <input type="text" id="txtInput">
+    <button id="Check">Check</button>
+
+
+
+    <script>  
+    
+        document.querySelector("#Check").addEventListener("click", function() { 
+        let num = document.querySelector("#txtInput").value;
+        console.log(num);
+
+        try{ 
+
+            if(num <5){ 
+                throw "input is too low";
+            }
+            else if(num >10){ 
+                throw "input is too hight";
+            }
+            
+
+
+        }catch(err){ 
+            console.log(err);
+
+        }
+   
+        })
+
+
+
+        // use function practice
+
+        // function add(x,y){ 
+        //     let multiple = x * y;
+        //     document.write(multiple);
+        // }
+       
+        // add(5, 10);
+
+
+        // Es6 function call
+        // const add = (x,y) => { 
+        //     let sum = x + y;
+        //     document.write(sum);
+        // }
+
+        // add(20,10);
+
+
+     </script>
+    
+</body>
+</html>
