@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow method part 2</title>
+</head>
+<body>
+
+    <script> 
+    
+    const students = [ 
+        { 
+            id : 1280674,
+            name : 'Tuhin',
+            gpa : 3.09
+
+        },
+
+        { 
+            id : 1280684,
+            name : 'Rakib',
+            gpa : 3.35
+        },
+
+        { 
+            id : 1280675,
+            name : 'Shahin',
+            gpa : 2.56
+
+        },
+
+        { 
+            id : 1280574,
+            name : 'Shakil',
+            gpa : 2.89,
+
+        },
+    ]
+
+    function studentNames1(){ 
+       return students.filter(function(x){ 
+            return x.gpa > 3
+        }).map(function(y){ 
+            return y.name;
+        });
+    }
+
+    const studentNames2 = () => students.filter((x) => x.gpa >3).map((y) => y.name);
+
+    console.log(studentNames1());
+    console.log(studentNames2());
+
+    
+    </script>
+    
+</body>
+</html>
