@@ -10,17 +10,43 @@
 
     <script> 
     
-    let numbers = [1,20,43,56,7];
-    const eventNumber = (value) => { 
-        if(value%2 ===0){ 
-            return value;
+    // let numbers = [1,20,43,56,7];
+    // const eventNumber = (value) => { 
+    //     if(value%2 ===0){ 
+    //         return value;
+    //     }
+
+    // }
+    // let firstEventNumber = numbers.find(eventNumber);
+    // let firstEventNumberIndex = numbers.findIndex(eventNumber)
+    // console.log(firstEventNumber);
+    // console.log(firstEventNumberIndex);
+
+
+    const students = [ 
+        { 
+            id : 1232,
+            gpa : 4.50
+        },
+
+        { 
+            id : 1442,
+            gpa : 3.50
+        },
+
+        { 
+            id : 3432,
+            gpa : 2.50
+        },
+
+        { 
+            id : 3432,
+            gpa :5
         }
 
-    }
-    let firstEventNumber = numbers.find(eventNumber);
-    let firstEventNumberIndex = numbers.findIndex(eventNumber)
-    console.log(firstEventNumber);
-    console.log(firstEventNumberIndex);
+    ]
+
+    console.log(students.find(x=> x.gpa>4));
     
     </script>
     
