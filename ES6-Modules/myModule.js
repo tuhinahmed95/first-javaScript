@@ -1,0 +1,1 @@
+export let text = 'welcome to bangladesh';
