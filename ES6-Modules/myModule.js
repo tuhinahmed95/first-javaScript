@@ -1,1 +1,1 @@
-export let text = 'welcome to bangladesh';
+export let text = "welcome to module";

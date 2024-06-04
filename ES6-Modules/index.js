@@ -1,2 +1,2 @@
-import {text}from "/.myModule.js"
+import {text} from '/.myModule.js'
 console.log(text);
