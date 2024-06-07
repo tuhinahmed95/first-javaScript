@@ -2,7 +2,7 @@ console.log("welcome");
 
 // how to create a promise =>pending, resolve,reject .
 const promise1 = new Promise((resolve,pending)=>{ 
-    let promisCompleted = false;
+    let promisCompleted = true;
     if(promisCompleted){ 
         resolve("promise 1 completed");
     }else{ 
@@ -10,12 +10,17 @@ const promise1 = new Promise((resolve,pending)=>{
     }
 
 })
+
+const promise2 = new Promise((resolve,pending)=>{ 
+    resolve("completed Promise 2");
+});
+promise2.then((res)=>{ 
+    console.log(res);
+})
 //console.log(promise1);
 promise1.then((res)=>{ 
     console.log(res);
 })
-catch((err) =>{ 
-    console.log(err);
-});
+
 
 console.log("end");

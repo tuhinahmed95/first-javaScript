@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise 2</title>
+</head>
+<body>
+    
+    <script> 
+        console.log("welcome");
+
+        const task1 = () => { 
+            return new Promise((resolve, reject) =>{ 
+                resolve("task one is completed")
+            })
+        }
+
+        const task2 = () => { 
+            return new Promise((resolve, reject) =>{ 
+                resolve("task two is completed")
+            })
+        }
+
+        const task3 = () => { 
+            return new Promise((resolve, reject) =>{ 
+                resolve("task three is completed")
+            })
+        }
+
+        task1().then((res) => console.log(res));
+
+
+
+    </script>
+</body>
+</html>
