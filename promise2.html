@@ -18,7 +18,9 @@
 
         const task2 = () => { 
             return new Promise((resolve, reject) =>{ 
-                resolve("task two is completed")
+                setTimeout(() =>{ 
+                    resolve("task two is completed")
+                }, 2000);
             })
         }
 
@@ -35,6 +37,7 @@
         .then((res) =>console.log(res));
 
 
+        console.log("bye");
 
     </script>
 </body>
