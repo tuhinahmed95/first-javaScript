@@ -44,13 +44,25 @@
     //     document.write("F");
     // }
 
-    let num = parseFloat(prompt("enter your number = "));
-    if(num>0){ 
-        document.write("Positive");
-    }else if(num<0){ 
-        document.write("Negetive");
+    // let num = parseFloat(prompt("enter your number = "));
+    // if(num>0){ 
+    //     document.write("Positive");
+    // }else if(num<0){ 
+    //     document.write("Negetive");
+    // }else{ 
+    //     document.write("Zero");
+    // }
+
+    let num1 = parseFloat(prompt("enter your first numer = "));
+    let num2 = parseFloat(prompt("enter your second numer = "));
+    let num3 = parseFloat(prompt("enter your third numer = "));
+
+    if(num1>num2 && num1>num3){ 
+        document.write("Largest Number ="+ num1);
+    }else if(num2>num1 && num2>num3){ 
+        document.write("largest number ="+num2);
     }else{ 
-        document.write("Zero");
+        document.write("largest number ="+num3);
     }
     
 </script>
