@@ -30,6 +30,8 @@ document.write("<br/>");
 const cars = ['bmw','rangerover','lambergini'];
 document.getElementById("demo").innerHTML=cars;
 
+document.write(typeof)("Tuhin");
+
 
 
 
