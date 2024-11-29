@@ -19,12 +19,16 @@ document.write("<br/>");
 document.write("<br/>");
 
 let name,address,profession,status,allv;
-name = "Tuhin";
-address = "Gaibandha";
-profession = "Developer";
-status = "Single";
+name = "Tuhin ";
+address = "Gaibandha ";
+profession = "Developer ";
+status = "Single ";
 allv = name + address + profession + status;
-document.write(allv,' ');
+document.write(allv);
+
+document.write("<br/>");
+const cars = ['bmw','rangerover','lambergini'];
+document.getElementById("demo").innerHTML=cars;
 
 
 
